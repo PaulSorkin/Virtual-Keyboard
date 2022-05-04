@@ -1,8 +1,13 @@
 import _ from 'lodash';
 import './style.css';
 import Icon from './icon.png'
+import {makeHeading} from './h1'
 
-function component() {
+
+
+document.body.appendChild(makeHeading());
+
+/*function component() {
     const element = document.createElement('div');
   
     // Lodash, now imported by this script
@@ -13,9 +18,12 @@ function component() {
     const myIcon = new Image();
     myIcon.src = Icon;
 
-    element.appendChild(myIcon);
+    //element.appendChild(myIcon);
   
     return element;
   }
   
-  document.body.appendChild(component());
+  document.body.appendChild(component());*/
+  
+
+
