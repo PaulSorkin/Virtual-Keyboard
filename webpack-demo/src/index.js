@@ -3,11 +3,13 @@ import './style.css';
 import Icon from './icon.png'
 import { makeHeading } from './h1'
 import { makeTextArea, textArea } from './textArea'
+import { keyboard } from './keyboard'
 
 
 
 document.body.appendChild(makeHeading());
 document.body.appendChild(makeTextArea());
+document.body.appendChild(keyboard());
 
 /*function component() {
     const element = document.createElement('div');
