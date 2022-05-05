@@ -1,11 +1,13 @@
 import _ from 'lodash';
 import './style.css';
 import Icon from './icon.png'
-import {makeHeading} from './h1'
+import { makeHeading } from './h1'
+import { makeTextArea, textArea } from './textArea'
 
 
 
 document.body.appendChild(makeHeading());
+document.body.appendChild(makeTextArea());
 
 /*function component() {
     const element = document.createElement('div');
@@ -24,6 +26,6 @@ document.body.appendChild(makeHeading());
   }
   
   document.body.appendChild(component());*/
-  
+
 
 

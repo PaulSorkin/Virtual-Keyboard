@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(181, 215, 216);
+}
+
+.text_area {
+    width: 80%;
+    max-width: 900px;
+    border: 2px solid rgb(81, 177, 81);
+}
