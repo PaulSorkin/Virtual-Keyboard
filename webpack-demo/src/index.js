@@ -5,6 +5,7 @@ import { makeHeading } from './h1'
 import { makeTextArea, textArea } from './textArea'
 import { keyboard} from './keyboard'
 import { keysObjects } from './keysObjects'
+import { makeKeys } from './makeKeys'
 
 
 
@@ -13,8 +14,15 @@ import { keysObjects } from './keysObjects'
 document.body.appendChild(makeHeading());
 document.body.appendChild(makeTextArea());
 document.body.appendChild(keyboard());
+const keyboardKeys = document.querySelector('#keyboard-keys');
+keyboardKeys.appendChild(makeKeys());
 
-let makeKeys = () => keysObjects.forEach(el => {
+const btn = document.createElement('div');
+btn.classList.add('btn');
+btn.innerText = ('bla-bla');
+document.body.appendChild(btn);
+
+/*let makeKeys = () => keysObjects.forEach(el => {
   const keyboardKeys = document.querySelector('#keyboard-keys');
   let key_item = document.createElement('button');
   key_item.classList.add('keyboard_key');
@@ -23,7 +31,7 @@ let makeKeys = () => keysObjects.forEach(el => {
   keyboardKeys.appendChild(key_item);
 });
 
-makeKeys();
+makeKeys();*/
 
 /*function component() {
     const element = document.createElement('div');
