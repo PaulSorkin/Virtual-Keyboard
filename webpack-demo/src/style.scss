@@ -35,7 +35,7 @@ body {
     margin: 3px;
     border-radius: 4px;
     border: none;
-    background: rgba($color: #319990a2, $alpha: 0.2);
+    background: blue;
     color: white;
     font-size: 1.05rem;
     outline: none;
@@ -44,12 +44,14 @@ body {
     align-items: center;
     justify-content: center;
     vertical-align: top;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
     //-weblit-tap-                              I need to decide what to do here
 
-    & :active {
+    /*& :active {
         background: rgba($color: #319990a2, $alpha: 0.12);
   
-    }
+    }*/
 }
 
 .keyboard_key-wide {
