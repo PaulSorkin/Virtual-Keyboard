@@ -21,7 +21,7 @@ body {
     box-shadow: 0 0 50px black;
     user-select: none;
     transition: 0.5s;
-    min-height: 100px;                      // Do I realli need this?
+    min-height: 100px;                      // Do I really need this?
 }
 
 .keyboard_keys {
@@ -66,6 +66,20 @@ body {
 
 
 .btn {
-    width: 50px;
-    height: 50px;
+    height: 45px;
+    width: 16%;
+    max-width: 90px;
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
 }

@@ -4,23 +4,22 @@ import Icon from './icon.png'
 import { makeHeading } from './h1'
 import { makeTextArea, textArea } from './textArea'
 import { keyboard} from './keyboard'
-import { keysObjects } from './keysObjects'
+//import { keysObjects } from './keysObjects'
 import { makeKeys } from './makeKeys'
-
-
-
 
 
 document.body.appendChild(makeHeading());
 document.body.appendChild(makeTextArea());
 document.body.appendChild(keyboard());
-const keyboardKeys = document.querySelector('#keyboard-keys');
-keyboardKeys.appendChild(makeKeys());
+const keyboardKeys = document.querySelector('.keyboard_keys');
+//keyboardKeys.appendChild(makeKeys());
+makeKeys();
 
-const btn = document.createElement('div');
+
+const btn = document.createElement('button');
 btn.classList.add('btn');
 btn.innerText = ('bla-bla');
-document.body.appendChild(btn);
+document.body.append(btn);
 
 /*let makeKeys = () => keysObjects.forEach(el => {
   const keyboardKeys = document.querySelector('#keyboard-keys');

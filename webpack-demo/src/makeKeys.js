@@ -7,7 +7,8 @@ function makeKeys() {
         key_item.classList.add('keyboard_key');
         key_item.setAttribute("type", "button");
         key_item.id = el.keyCode;
-        key_item.innerText = `${el.key}`;
+        el.unicode ? key_item.innerHTML = el.unicode : key_item.innerHTML = el.key;
+        //key_item.innerHTML = el.key;
         keyboardKeys.appendChild(key_item);
       });
 }
