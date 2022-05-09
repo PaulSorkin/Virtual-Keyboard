@@ -8,6 +8,8 @@ function makeKeys() {
         key_item.setAttribute("type", "button");
         key_item.id = el.keyCode;
 
+        let capsOn = false;
+
         switch(el.code) {
           case "Backspace":
             key_item.classList.add('keyboard_key-double-wide');
@@ -20,7 +22,17 @@ function makeKeys() {
             break;
           case "CapsLock":
             key_item.classList.add('keyboard_key-double-wide');
+            capsOn === true ? key_item.classList.add('keyboard_key-pushed') : key_item.classList.remove('keyboard_key-pushed');
             key_item.innerHTML = el.unicode;
+            key_item.addEventListener('click', ()=> {
+              if (capsOn === false) {
+                key_item.classList.add('keyboard_key-pushed');
+                capsOn = true;
+              } else {
+                key_item.classList.remove('keyboard_key-pushed');
+                capsOn = false;
+              }
+            });
             break;
           case "Enter":
             key_item.classList.add('keyboard_key-double-wide');
@@ -44,7 +56,7 @@ function makeKeys() {
               key_item.innerText = "Del";
               break;
             default:
-              key_item.innerHTML = el.key;
+              capsOn === false ? key_item.innerHTML = el.key : key_item.innerHTML = el.key.toUpperCase();
               }
             
         keyboardKeys.appendChild(key_item);

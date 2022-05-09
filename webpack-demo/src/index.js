@@ -6,6 +6,7 @@ import { keyboard} from './keyboard'
 //import { keysObjects } from './keysObjects'
 import { makeKeys } from './makeKeys'
 
+//let capsOn = false;
 
 document.body.appendChild(makeHeading());
 document.body.appendChild(makeTextArea());
@@ -13,20 +14,25 @@ document.body.appendChild(keyboard());
 makeKeys();
 
 // caps
-let capsOn = false;
-const capsKey = document.getElementById('20');
 
+/*const capsKey = document.getElementById('20');
+const keyboardKeys = document.getElementById('keyboard-keys');
 function caps() {
+  keyboardKeys.innerHTML = ''
   if (capsOn === false) {
     capsKey.classList.add('keyboard_key-pushed');
     capsOn = true;
+    makeKeys();
+    capsKey.addEventListener('click', caps)
   } else {
     capsKey.classList.remove('keyboard_key-pushed');
     capsOn = false;
+    makeKeys();
+    capsKey.addEventListener('click', caps)
   }
 }
 
-capsKey.addEventListener('click', caps)
+capsKey.addEventListener('click', caps)*/
 
 
 
@@ -63,5 +69,4 @@ makeKeys();*/
   }
   
   document.body.appendChild(component());*/
-
 
