@@ -1,8 +1,7 @@
-import _ from 'lodash';
+//import _ from 'lodash';
 import './style.css';
-import Icon from './icon.png'
 import { makeHeading } from './h1'
-import { makeTextArea, textArea } from './textArea'
+import { makeTextArea } from './textArea'
 import { keyboard} from './keyboard'
 //import { keysObjects } from './keysObjects'
 import { makeKeys } from './makeKeys'
@@ -11,8 +10,6 @@ import { makeKeys } from './makeKeys'
 document.body.appendChild(makeHeading());
 document.body.appendChild(makeTextArea());
 document.body.appendChild(keyboard());
-const keyboardKeys = document.querySelector('.keyboard_keys');
-//keyboardKeys.appendChild(makeKeys());
 makeKeys();
 
 
