@@ -12,6 +12,23 @@ document.body.appendChild(makeTextArea());
 document.body.appendChild(keyboard());
 makeKeys();
 
+// caps
+let capsOn = false;
+const capsKey = document.getElementById('20');
+
+function caps() {
+  if (capsOn === false) {
+    capsKey.classList.add('keyboard_key-pushed');
+    capsOn = true;
+  } else {
+    capsKey.classList.remove('keyboard_key-pushed');
+    capsOn = false;
+  }
+}
+
+capsKey.addEventListener('click', caps)
+
+
 
 const btn = document.createElement('button');
 btn.classList.add('btn');
@@ -46,6 +63,5 @@ makeKeys();*/
   }
   
   document.body.appendChild(component());*/
-
 
 
