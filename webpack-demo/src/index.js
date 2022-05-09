@@ -6,6 +6,8 @@ import { keyboard} from './keyboard'
 //import { keysObjects } from './keysObjects'
 import { makeKeys } from './makeKeys'
 
+alert ('Привет, коллега! Можешь не тратить свое впемя и ставить 0 баллов за проваленную работу. Я не успел до дедлайна, попробую доделать чуть позже. Спасибо!')
+
 let capsOn = false;
 
 document.body.appendChild(makeHeading());
