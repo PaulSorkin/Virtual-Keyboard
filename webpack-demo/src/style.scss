@@ -14,7 +14,7 @@ body {
 }
 
 .keyboard {
-    width: 80%;
+    width: 85%;
     max-width: 900px;
     padding: 5px 0;
     background: green;
@@ -26,6 +26,7 @@ body {
 
 .keyboard_keys {
     text-align: center;
+    justify-content: first baseline;
 }
 
 .keyboard_key {
@@ -57,11 +58,11 @@ body {
 }
 
 .space-bar {
-    width: 36%;
+    min-width: 36%;
 }
 
 .keyboard_key-pushed {
-    background: rgba($color: #319990a2, $alpha: 0.3);
+    background: rgba($color: green, $alpha: 0.3);
 }
 
 

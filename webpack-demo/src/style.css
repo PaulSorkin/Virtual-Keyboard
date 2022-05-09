@@ -1,31 +1,48 @@
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(181, 215, 216);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #b5d7d8;
   gap: 40px;
 }
 
 .text_area {
   width: 80%;
   max-width: 900px;
-  border: 2px solid rgb(81, 177, 81);
+  border: 2px solid #51b151;
 }
 
 .keyboard {
-  width: 80%;
+  width: 85%;
   max-width: 900px;
   padding: 5px 0;
   background: green;
-  box-shadow: 0 0 50px black;
-  user-select: none;
+  -webkit-box-shadow: 0 0 50px black;
+          box-shadow: 0 0 50px black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   min-height: 100px;
 }
 
 .keyboard_keys {
   text-align: center;
+  -webkit-box-pack: first baseline;
+      -ms-flex-pack: first baseline;
+          justify-content: first baseline;
 }
 
 .keyboard_key {
@@ -40,9 +57,15 @@ body {
   font-size: 16px;
   outline: none;
   cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   vertical-align: top;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
@@ -57,11 +80,11 @@ body {
 }
 
 .space-bar {
-  width: 36%;
+  min-width: 36%;
 }
 
 .keyboard_key-pushed {
-  background: rgba(49, 153, 144, 0.3);
+  background: rgba(0, 128, 0, 0.3);
 }
 
 .btn {
@@ -75,12 +98,17 @@ body {
   color: white;
   font-size: 16px;
   outline: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   vertical-align: top;
   padding: 0;
   -webkit-tap-highlight-color: transparent;
 }
-
 /*# sourceMappingURL=style.css.map */

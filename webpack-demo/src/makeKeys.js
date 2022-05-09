@@ -15,29 +15,44 @@ function makeKeys() {
         switch(el.code) {
           case "Backspace":
             key_item.classList.add('keyboard_key-double-wide');
-            keysObjects.indexOf(el) !== -1;
+            keysObjects.indexOf(el) !== -1;                         //doesnt work
+            key_item.innerHTML = el.unicode;
             break;
           case "Tab":
-            key_item.classList.add('keyboard_key-wide');
+            //key_item.classList.add('keyboard_key-wide');
+            key_item.innerHTML = el.unicode;
             break;
           case "CapsLock":
             key_item.classList.add('keyboard_key-double-wide');
+            key_item.innerHTML = el.unicode;
             break;
           case "Enter":
             key_item.classList.add('keyboard_key-double-wide');
+            key_item.innerHTML = el.unicode;
             break;
             case "ShiftLeft":
               key_item.classList.add('keyboard_key-double-wide');
+              key_item.innerHTML = el.unicode;
               break;
             case "ControlLeft":
               key_item.classList.add('keyboard_key-wide');
+              key_item.innerHTML = 'Ctrl';
               break;
             case "Space":
               key_item.classList.add('space-bar');
               break;
+            case "MetaLeft":
+              key_item.innerHTML = el.unicode;
+              break;
+            case "NumpadDecimal":
+              key_item.innerText = "Del";
+              break;
+            default:
+              key_item.innerHTML = el.key;
               }
+            
 
-        el.unicode ? key_item.innerHTML = el.unicode : key_item.innerHTML = el.key;
+        
         //key_item.innerHTML = el.key;
         keyboardKeys.appendChild(key_item);
       });

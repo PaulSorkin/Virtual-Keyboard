@@ -538,7 +538,7 @@ const keysObjects = [
         "key": "Shift",                         //Here comes right Shift
         "keyCode": 16,
         "which": 16,
-        "code": "ShiftLeft",
+        "code": "ShiftRight",
         "location": 1,
         "description": "shift",
         "unicode": "⇧"
