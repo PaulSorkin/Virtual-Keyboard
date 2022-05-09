@@ -1,4 +1,5 @@
 import { keysObjects } from './keysObjects'
+import { capsOn } from './index'
 
 function makeKeys() {
     keysObjects.forEach(el => {
@@ -8,7 +9,7 @@ function makeKeys() {
         key_item.setAttribute("type", "button");
         key_item.id = el.keyCode;
 
-        let capsOn = false;
+        //let capsOn = false;
 
         switch(el.code) {
           case "Backspace":
@@ -25,13 +26,7 @@ function makeKeys() {
             capsOn === true ? key_item.classList.add('keyboard_key-pushed') : key_item.classList.remove('keyboard_key-pushed');
             key_item.innerHTML = el.unicode;
             key_item.addEventListener('click', ()=> {
-              if (capsOn === false) {
-                key_item.classList.add('keyboard_key-pushed');
-                capsOn = true;
-              } else {
-                key_item.classList.remove('keyboard_key-pushed');
-                capsOn = false;
-              }
+                key_item.classList.toggle('keyboard_key-pushed');
             });
             break;
           case "Enter":

@@ -6,7 +6,7 @@ import { keyboard} from './keyboard'
 //import { keysObjects } from './keysObjects'
 import { makeKeys } from './makeKeys'
 
-//let capsOn = false;
+let capsOn = false;
 
 document.body.appendChild(makeHeading());
 document.body.appendChild(makeTextArea());
@@ -14,6 +14,8 @@ document.body.appendChild(keyboard());
 makeKeys();
 
 // caps
+
+
 
 /*const capsKey = document.getElementById('20');
 const keyboardKeys = document.getElementById('keyboard-keys');
@@ -70,3 +72,4 @@ makeKeys();*/
   
   document.body.appendChild(component());*/
 
+export { capsOn }

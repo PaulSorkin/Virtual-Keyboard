@@ -47,6 +47,10 @@ body {
     vertical-align: top;
     padding: 0;
     -webkit-tap-highlight-color: transparent;
+
+    &:hover {
+        background: rgba($color: rgb(0, 46, 0), $alpha: 0.3);
+    }
 }
 
 .keyboard_key-wide {

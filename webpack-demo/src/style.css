@@ -71,6 +71,10 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+.keyboard_key:hover {
+  background: rgba(0, 46, 0, 0.3);
+}
+
 .keyboard_key-wide {
   width: 9%;
 }
